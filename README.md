@@ -1,6 +1,11 @@
 # terminalchatbot
 A simple terminal LLM with prompt engineering for Colorado College Meeting #1. 
 
+Setup (Have python and pip installed)
+```
+pip install openai
+```
+
 CLI setup
 ```
 chmod +x chatgpt.py
