@@ -52,14 +52,11 @@ def main():
         loading_thread = threading.Thread(target=animate_loading)
         loading_thread.start()
 
-        # Get the response from ChatGPT
         response = get_chatgpt_response(prompt)
 
-        # Stop the loading animation
         stop_event.set()
         loading_thread.join()
         
-        clear_screen()
         print(f"ChatGPT:\n{response}\n")
 
 if __name__ == "__main__":
